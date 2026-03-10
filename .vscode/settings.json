@@ -1,5 +1,6 @@
 {
     "idf.flashType": "UART",
     "idf.monitorPort": "COM4",
-    "idf.portWin": "COM4"
+    "idf.portWin": "COM4",
+    "idf.currentSetup": "C:\\Users\\sosth\\esp\\v5.4.1\\esp-idf"
 }

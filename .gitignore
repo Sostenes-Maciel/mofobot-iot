@@ -1,3 +1,14 @@
+# ==============================
+# NODE.JS & REACT (Frontend/Backend)
+# ==============================
+node_modules/
+build/
+dist/
+.env
+
+# ==============================
+# ARDUINO / ESP32 (Hardware)
+# ==============================
 # Arquivos de segredos
 secrets.h
 
@@ -7,6 +18,9 @@ secrets.h
 *.hex
 *.lst
 
-# Arquivos de IDEs e do sistema
+# ==============================
+# SISTEMA E IDEs
+# ==============================
 .vscode/
 .DS_Store
+Thumbs.db

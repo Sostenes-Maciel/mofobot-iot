@@ -2,8 +2,8 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 
-#define WIFI_SSID      "Seu-Nome-Do-Wi-Fi"
-#define WIFI_PASSWORD  "Sua-Senha-Do-Wi-Fi"
+#define WIFI_SSID      "REDE" 
+#define WIFI_PASSWORD  "SENHA"
 
 static const char *TAG = "WIFI_MANAGER";
 

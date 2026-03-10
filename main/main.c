@@ -35,7 +35,7 @@ static float limiar_umidade = 60.0f;
 static int limiar_gas = 350;
 
 // NOVAS VARIÁVEIS para a lógica de verificação
-#define CONSECUTIVE_READINGS_THRESHOLD 3
+#define CONSECUTIVE_READINGS_THRESHOLD 1
 static int alerta_counter = 0;
 
 // Manipulador de eventos MQTT corrigido
@@ -100,7 +100,7 @@ void sensor_analysis_task(void *pvParameter) {
             }
             ESP_LOGI(TAG, "Condição de alerta detectada. Contador: %d/%d", alerta_counter, CONSECUTIVE_READINGS_THRESHOLD);
         } else {
-            alerta_counter = 0;
+            alerta_counter = 5;
         }
 
         // Publica o status final apenas se o contador atingir o limite
@@ -115,7 +115,7 @@ void sensor_analysis_task(void *pvParameter) {
         
         ESP_LOGI(TAG, "Mensagens publicadas. Status final: %s", status_final);
 
-        vTaskDelay(pdMS_TO_TICKS(10000));
+        vTaskDelay(pdMS_TO_TICKS(20000));
     }
 }
 
